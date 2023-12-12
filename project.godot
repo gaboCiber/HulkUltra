@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="HULK"
+run/main_scene="res://Graphic/main.tscn"
+config/features=PackedStringArray("4.1", "C#", "Forward Plus")
+config/icon="res://Graphic/icon.svg"
+
+[display]
+
+window/size/resizable=false
+
+[dotnet]
+
+project/assembly_name="HULK"
+
+[input]
+
+ui_up={
+"deadzone": 0.5,
+"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":11,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":0,"axis":1,"axis_value":-1.0,"script":null)
+]
+}
+ui_text_caret_up={
+"deadzone": 0.5,
+"events": []
+}
